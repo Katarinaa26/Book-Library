@@ -11,7 +11,7 @@ migrate = Migrate()
 
 def create_app():
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mssql+pyodbc://DESKTOP-QP7N91R/plotflixdb?driver=ODBC+Driver+17+for+SQL+Server"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mssql+pyodbc://./plotflixdb?driver=ODBC+Driver+17+for+SQL+Server"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SECRET_KEY'] = 'hello'
 
