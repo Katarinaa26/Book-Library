@@ -69,3 +69,7 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for("views.home"))
+
+@auth.route('/reset_password')
+def reset_request():
+    return render_template('reset_request.html', title='Reset Request')
